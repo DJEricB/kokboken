@@ -3,7 +3,7 @@
 :root {
 	/* COLORS */
 	--clr-dark: 30 7% 16%;
-	--clr-light: 210 14% 95%;
+	--clr-white: 210 14% 95%;
 	--clr-accent-light: 19 100% 50%;
 	--clr-accent-dark: 228 38% 26%;
 
@@ -220,6 +220,18 @@ select {
 
 /* #endregion UTILITY CLASSES */
 
-/* #region COMPONENTS */
-
-/* #endregion COMPONENTS */
+.header {
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 0;
+}
+.header__slogan {
+	padding-bottom: 10px;
+}
+.nav__list {
+	padding: 0;
+	list-style-type: none;
+	justify-content: space-evenly;
+	align-items: center;
+}
