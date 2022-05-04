@@ -1,0 +1,35 @@
+@import url('style.css');
+.splide {
+	margin-top: 1rem;
+}
+.splide__track {
+	max-width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+.food__img {
+	width: 100%;
+}
+.tips__list {
+	margin: 1rem 1rem 1rem 0;
+}
+.tips__header {
+	margin: 1rem 1rem 0 1rem;
+	text-align: center;
+}
+.om__header {
+	margin: 1rem 1rem 0 1rem;
+	text-align: center;
+}
+.om__text {
+	margin: 1rem 1rem 0 1rem;
+	text-align: center;
+}
+.tipswrapper {
+	margin-inline: 1rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.tipswrapper > div {
+	box-shadow: 0 0 10px 5px hsl(var(--clr-accent-dark) / 0.5);
+}

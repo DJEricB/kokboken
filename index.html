@@ -6,18 +6,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Kokboken för studenter - Startsida</title>
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="css/index.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Serif:ital@0;1&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="assets/dist/css/themes/splide-default.min.css"
+		/>
 	</head>
 	<body>
 		<header class="header flex bg-accent-dark">
-			<h1 class="header__title ff-serif text-accent-light">
-				Kokboken för studenter
+			<h1 class="header__title">
+				<a href="index.html" class="header__link ff-serif text-accent-light"
+					>Kokboken för studenter</a
+				>
 			</h1>
 			<h3 class="header__slogan ff-serif text-white">
 				Recept för dig som är nybliven student
@@ -26,37 +32,166 @@
 		<nav class="nav bg-accent-light">
 			<ul class="nav__list flex">
 				<li class="nav__listitem">
-					<a class="nav__listlink text-dark" href="recept.html">Recept</a>
+					<a class="nav__listlink text-dark active" href="index.html">Hem</a>
+				</li>
+				<li class="nav__listitem">
+					<a class="nav__listlink text-dark" href="#recept">Recept</a>
 				</li>
 				<li class="nav__listitem">
 					<a class="nav__listlink text-dark" href="#">Beslutsångest?</a>
 				</li>
 				<li class="nav__listitem">
-					<a class="nav__listlink text-dark" href="om.html">Om mig</a>
+					<a class="nav__listlink text-dark" href="#ommig">Om mig</a>
 				</li>
 			</ul>
 		</nav>
-		<main class="main">
-			<div class="main__food1">
-				<img src="" alt="" class="food__img" />
-				<h6 class="food__name"></h6>
-				<p class="food__desc"></p>
-			</div>
-			<div class="main__food2">
-				<img src="" alt="" class="food__img" />
-				<h6 class="food__name"></h6>
-				<p class="food__desc"></p>
-			</div>
-			<div class="main__food3">
-				<img src="" alt="" class="food__img" />
-				<h6 class="food__name"></h6>
-				<p class="food__desc"></p>
-			</div>
-			<div class="main__food4">
-				<img src="" alt="" class="food__img" />
-				<h6 class="food__name"></h6>
-				<p class="food__desc"></p>
+		<main id="recept" class="splide" aria-label="Splide Basic HTML Example">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide">
+						<div class="main__food">
+							<a href="alfredo.html">
+								<img
+									src="https://ik.imagekit.io/deejayeb/tr:w-1000/Alfredo_3mYX5ioWA?ik-sdk-version=javascript-1.4.3&updatedAt=1651055944288"
+									alt="Pasta Alfredo"
+									class="food__img"
+								/>
+							</a>
+							<a href="alfredo.html">
+								<h3 class="food__name">Pasta Alfredo</h3>
+							</a>
+							<p class="food__desc">En god vegetarisk rätt för en kall kväll</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="main__food">
+							<a href="pesto.html">
+								<img
+									src="https://ik.imagekit.io/deejayeb/tr:w-1000/Basil_6BusXVpna?ik-sdk-version=javascript-1.4.3&updatedAt=1651056281834"
+									alt="Pasta med basilikapesto"
+									class="food__img"
+								/>
+							</a>
+							<a href="pesto.html">
+								<h3 class="food__name">Basilikapesto-pasta</h3>
+							</a>
+							<p class="food__desc">En fräsch pastarätt för finsmakarna</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="main__food">
+							<a href="carbonara.html">
+								<img
+									src="https://ik.imagekit.io/deejayeb/tr:w-1000/Carbonara_cnQk2iPLQ?ik-sdk-version=javascript-1.4.3&updatedAt=1651056428160"
+									alt="Pasta Carbonara"
+									class="food__img"
+								/>
+							</a>
+							<a href="carbonara.html">
+								<h3 class="food__name">Pasta Carbonara</h3>
+							</a>
+							<p class="food__desc">En till pastarätt med bacon och äggulor</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="main__food">
+							<a href="meringue.html">
+								<img
+									src="https://ik.imagekit.io/deejayeb/tr:w-1000/Meringue_l0pIjZoyI?ik-sdk-version=javascript-1.4.3&updatedAt=1651056678059"
+									alt="Maränger"
+									class="food__img"
+								/>
+							</a>
+							<a href="meringue.html">
+								<h3 class="food__name">Maränger</h3>
+							</a>
+							<p class="food__desc">Gör denna med Carbonaran!</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="main__food">
+							<a href="curry.html">
+								<img
+									src="https://ik.imagekit.io/deejayeb/tr:w-1000/Chicken_Curry_TnWzs_Gw3?ik-sdk-version=javascript-1.4.3&updatedAt=1651056872745"
+									alt="Kycklingcurry med ris"
+									class="food__img"
+								/>
+							</a>
+							<a href="curry.html">
+								<h3 class="food__name">Kycklingcurry med ris</h3>
+							</a>
+							<p class="food__desc">En god exotisk kycklingrätt med ris</p>
+						</div>
+					</li>
+					<li class="splide__slide">
+						<div class="main__food">
+							<a href="scones.html">
+								<img
+									src="https://ik.imagekit.io/deejayeb/tr:w-1000/Scones_3hx5tZKot?ik-sdk-version=javascript-1.4.3&updatedAt=1651057066903"
+									alt="Scones"
+									class="food__img"
+								/>
+							</a>
+							<a href="scones.html">
+								<h3 class="food__name">Scones</h3>
+							</a>
+							<p class="food__desc">Enkla och goda tilltugg</p>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</main>
+		<section class="tipswrapper flex">
+			<div class="tips">
+				<h2 class="tips__header">Tips och tricks i köket!</h2>
+				<ul class="tips__list">
+					<li class="tips__listitem">
+						Det är bättre att väga än att mäta volym, på grund av
+						densitetförändringar i fuktiga respektive torra förhållanden.
+					</li>
+					<li class="tips__listitem">
+						Spara grönsaks- och köttrester och frys in dem för att senare kunna
+						koka egen fond, som blir mycket godare än den man köper i affären.
+						Mindre svinn också!
+					</li>
+					<li class="tips__listitem">
+						Använd inte eggen på kniven när du skrapar av något från skärbrädan.
+						Din kniv blir slö! Använd istället ryggen på kniven.
+					</li>
+					<li class="tips__listitem">
+						Lägg dina färdigkokta ägg i kallt vatten direkt efter du hällt av
+						det kokande vattnet. Det gör det enklare att skala dem.
+					</li>
+					<li class="tips__listitem">
+						Har du lite allt möjligt i kylen men vet inte vad du vill äta? Gör
+						en pytt i panna vetja! Gott och smidigt!
+					</li>
+					<li class="tips__listitem">
+						Klicka <a href="measures.html">här</a> för en utförlig måttabell.
+					</li>
+				</ul>
+			</div>
+			<div id="ommig" class="om">
+				<h2 class="om__header">Om mig!</h2>
+				<p class="om__text">
+					Hej! Eric heter jag och jag är grundaren av denna webbplats. Denna
+					digitala kokbok skapades för ett slutprojekt inom kursen
+					Webbutveckling 1 på gymnasiet.
+				</p>
+			</div>
+		</section>
+		<footer class="footer flex">
+			<p class="copyright">&copy; Eric Bjurvald, 2022</p>
+			<p>Skapat som ett skolprojekt vt-2022</p>
+		</footer>
+
+		<script src="assets/dist/js/splide.min.js"></script>
+		<script>
+			new Splide('.splide', {
+				type: 'loop',
+				perPage: 3,
+				perMove: 1,
+			}).mount();
+		</script>
 	</body>
 </html>

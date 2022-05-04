@@ -4,7 +4,7 @@
 	/* COLORS */
 	--clr-dark: 30 7% 16%;
 	--clr-white: 210 14% 95%;
-	--clr-accent-light: 19 100% 50%;
+	--clr-accent-light: 17 100% 50%;
 	--clr-accent-dark: 228 38% 26%;
 
 	/* FONT SIZES */
@@ -30,6 +30,7 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 /* Reset margins */
@@ -226,6 +227,9 @@ select {
 	flex-direction: column;
 	gap: 0;
 }
+.header__link {
+	text-decoration: none;
+}
 .header__slogan {
 	padding-bottom: 10px;
 }
@@ -236,4 +240,22 @@ select {
 	justify-content: space-evenly;
 	align-items: center;
 	margin: 0;
+}
+.nav__listlink {
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+}
+.nav__listlink:hover {
+	text-decoration: underline;
+}
+.active {
+	text-decoration: underline;
+}
+.footer {
+	height: 4rem;
+	background-color: hsl(var(--clr-dark));
+	color: hsl(var(--clr-white));
+	align-items: center;
+	justify-content: space-evenly;
 }
