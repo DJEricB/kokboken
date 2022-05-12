@@ -1,0 +1,43 @@
+@import url('style.css');
+
+.content__wrapper {
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-areas:
+		'fiw fiw fiw fiw fiw fiw fiw fiw'
+		'ing ing ing ing fim fim fim fim'
+		'ing ing ing ing fim fim fim fim'
+		'how how how how tip tip tip tip'
+		'how how how how tip tip tip tip';
+	margin-inline: 2rem;
+}
+.foodinfo__wrapper {
+	grid-area: fiw;
+	margin-block: 1rem;
+}
+.ingredients {
+	grid-area: ing;
+}
+.food__imgwrapper {
+	grid-area: fim;
+}
+.howto {
+	grid-area: how;
+}
+.tips {
+	grid-area: tip;
+}
+.splide {
+	grid-area: car;
+}
+
+.focusfood__img {
+	width: 100%;
+}
+
+/* .food__img {
+	width: 100%;
+} */
+.obs {
+	color: red;
+	font-weight: bold;
+}

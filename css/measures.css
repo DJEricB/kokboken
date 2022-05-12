@@ -1,0 +1,60 @@
+@import url('style.css');
+.measures {
+	margin-inline: 2rem;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-areas:
+		'meh meh meh meh meh meh'
+		'gsm gsm svm svm amm amm'
+		'gsm gsm svm svm tmp tmp'
+		'gsm gsm brm brm tmp tmp'
+		'gsm gsm brm brm tmp tmp'
+		'sal sal sal ktt ktt ktt'
+		'sal sal sal ktt ktt ktt'
+		'dec dec dec dec dec dec';
+}
+.measures__header {
+	grid-area: meh;
+}
+.gsm {
+	grid-area: gsm;
+	text-align: center;
+}
+.svm {
+	grid-area: svm;
+	text-align: center;
+}
+.amm {
+	grid-area: amm;
+	text-align: center;
+}
+.brm {
+	grid-area: brm;
+	text-align: center;
+}
+.tmp {
+	grid-area: tmp;
+	text-align: center;
+}
+.tmp__table {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.dec {
+	grid-area: dec;
+	text-align: center;
+}
+.dec__table {
+	margin: 0 auto;
+}
+.sal {
+	grid-area: sal;
+	text-align: center;
+}
+.ktt {
+	grid-area: ktt;
+	text-align: center;
+}
+.ktt__table {
+	margin: 0 auto;
+}
