@@ -17,15 +17,22 @@
 			rel="stylesheet"
 			href="assets/dist/css/themes/splide-default.min.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 	</head>
 	<body>
 		<header class="header flex bg-accent-dark">
-			<h1 class="header__title">
+			<h1 class="header__title text-center">
 				<a href="index.html" class="header__link ff-serif text-accent-light"
 					>Kokboken för studenter</a
 				>
 			</h1>
-			<h3 class="header__slogan ff-serif text-white">
+			<h3 class="header__slogan ff-serif text-white text-center">
 				Recept för dig som är nybliven student
 			</h3>
 		</header>
@@ -38,7 +45,9 @@
 					<a class="nav__listlink text-dark" href="index.html#recept">Recept</a>
 				</li>
 				<li class="nav__listitem">
-					<a class="nav__listlink text-dark" href="#">Beslutsångest?</a>
+					<a class="nav__listlink text-dark" id="random" href="#"
+						>Beslutsångest?</a
+					>
 				</li>
 				<li class="nav__listitem">
 					<a class="nav__listlink text-dark" href="index.html#ommig">Om mig</a>
@@ -54,12 +63,26 @@
 				<h2 class="ingredients__header ff-serif text-accent-dark text-center">
 					Ingredienser
 				</h2>
+				<p class="servings__container">
+					Portioner:
+					<span class="servings">4</span>
+				</p>
 				<ul class="ingredients__list">
-					<li class="ingredients__listitem">4 dl velemjöl</li>
-					<li class="ingredients__listitem">2 tsk bakpulver</li>
-					<li class="ingredients__listitem">2 krm salt</li>
-					<li class="ingredients__listitem">50 g smör</li>
-					<li class="ingredients__listitem">2 dl mjölk</li>
+					<li class="ingredients__listitem">
+						<span class="ingredients__amount">4</span> dl vetemjöl
+					</li>
+					<li class="ingredients__listitem">
+						<span class="ingredients__amount">2</span> tsk bakpulver
+					</li>
+					<li class="ingredients__listitem">
+						<span class="ingredients__amount">2</span> krm salt
+					</li>
+					<li class="ingredients__listitem">
+						<span class="ingredients__amount">50</span> g smör
+					</li>
+					<li class="ingredients__listitem">
+						<span class="ingredients__amount">2</span> dl mjölk
+					</li>
 				</ul>
 			</div>
 			<div class="food__imgwrapper">
@@ -110,124 +133,12 @@
 					</li>
 				</ul>
 			</div>
-			<!-- <section
-				id="recept"
-				class="splide"
-				aria-label="Splide Basic HTML Example"
-			>
-				<div class="splide__track">
-					<ul class="splide__list">
-						<li class="splide__slide">
-							<div class="main__food">
-								<a href="alfredo.html">
-									<img
-										src="https://ik.imagekit.io/deejayeb/tr:w-1000/Alfredo_3mYX5ioWA?ik-sdk-version=javascript-1.4.3&updatedAt=1651055944288"
-										alt="Pasta Alfredo"
-										class="food__img"
-									/>
-								</a>
-								<a href="alfredo.html">
-									<h3 class="food__name">Pasta Alfredo</h3>
-								</a>
-								<p class="food__desc">
-									En god vegetarisk rätt för en kall kväll
-								</p>
-							</div>
-						</li>
-						<li class="splide__slide">
-							<div class="main__food">
-								<a href="pesto.html">
-									<img
-										src="https://ik.imagekit.io/deejayeb/tr:w-1000/Basil_6BusXVpna?ik-sdk-version=javascript-1.4.3&updatedAt=1651056281834"
-										alt="Pasta med basilikapesto"
-										class="food__img"
-									/>
-								</a>
-								<a href="pesto.html">
-									<h3 class="food__name">Basilikapesto-pasta</h3>
-								</a>
-								<p class="food__desc">En fräsch pastarätt för finsmakarna</p>
-							</div>
-						</li>
-						<li class="splide__slide">
-							<div class="main__food">
-								<a href="carbonara.html">
-									<img
-										src="https://ik.imagekit.io/deejayeb/tr:w-1000/Carbonara_cnQk2iPLQ?ik-sdk-version=javascript-1.4.3&updatedAt=1651056428160"
-										alt="Pasta Carbonara"
-										class="food__img"
-									/>
-								</a>
-								<a href="carbonara.html">
-									<h3 class="food__name">Pasta Carbonara</h3>
-								</a>
-								<p class="food__desc">
-									En till pastarätt med bacon och äggulor
-								</p>
-							</div>
-						</li>
-						<li class="splide__slide">
-							<div class="main__food">
-								<a href="meringue.html">
-									<img
-										src="https://ik.imagekit.io/deejayeb/tr:w-1000/Meringue_l0pIjZoyI?ik-sdk-version=javascript-1.4.3&updatedAt=1651056678059"
-										alt="Maränger"
-										class="food__img"
-									/>
-								</a>
-								<a href="meringue.html">
-									<h3 class="food__name">Maränger</h3>
-								</a>
-								<p class="food__desc">Gör denna med Carbonaran!</p>
-							</div>
-						</li>
-						<li class="splide__slide">
-							<div class="main__food">
-								<a href="curry.html">
-									<img
-										src="https://ik.imagekit.io/deejayeb/tr:w-1000/Chicken_Curry_TnWzs_Gw3?ik-sdk-version=javascript-1.4.3&updatedAt=1651056872745"
-										alt="Kycklingcurry med ris"
-										class="food__img"
-									/>
-								</a>
-								<a href="curry.html">
-									<h3 class="food__name">Kycklingcurry med ris</h3>
-								</a>
-								<p class="food__desc">En god exotisk kycklingrätt med ris</p>
-							</div>
-						</li>
-						<li class="splide__slide">
-							<div class="main__food">
-								<a href="scones.html">
-									<img
-										src="https://ik.imagekit.io/deejayeb/tr:w-1000/Scones_3hx5tZKot?ik-sdk-version=javascript-1.4.3&updatedAt=1651057066903"
-										alt="Scones"
-										class="food__img"
-									/>
-								</a>
-								<a href="scones.html">
-									<h3 class="food__name">Scones</h3>
-								</a>
-								<p class="food__desc">Enkla och goda tilltugg</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section> -->
 		</div>
 		<footer class="footer flex">
 			<p class="copyright">&copy; Eric Bjurvald, 2022</p>
 			<p>Skapat som ett skolprojekt vt-2022</p>
 		</footer>
-		<!-- <script src="assets/dist/js/splide.min.js"></script>
-		<script>
-			new Splide('.splide', {
-				type: 'loop',
-				perPage: 3,
-				perMove: 1,
-				pagination: false,
-				gap: '1rem',
-			}).mount();
-		</script> -->
+		<script src="js/randomsite.js"></script>
+		<script src="js/recipecalculator.js"></script>
 	</body>
 </html>

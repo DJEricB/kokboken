@@ -20,12 +20,12 @@
 	</head>
 	<body>
 		<header class="header flex bg-accent-dark">
-			<h1 class="header__title">
+			<h1 class="header__title text-center">
 				<a href="index.html" class="header__link ff-serif text-accent-light"
 					>Kokboken för studenter</a
 				>
 			</h1>
-			<h3 class="header__slogan ff-serif text-white">
+			<h3 class="header__slogan ff-serif text-white text-center">
 				Recept för dig som är nybliven student
 			</h3>
 		</header>
@@ -38,7 +38,9 @@
 					<a class="nav__listlink text-dark" href="#recept">Recept</a>
 				</li>
 				<li class="nav__listitem">
-					<a class="nav__listlink text-dark" href="#">Beslutsångest?</a>
+					<a class="nav__listlink text-dark" id="random" href="#"
+						>Beslutsångest?</a
+					>
 				</li>
 				<li class="nav__listitem">
 					<a class="nav__listlink text-dark" href="#ommig">Om mig</a>
@@ -141,7 +143,7 @@
 				</ul>
 			</div>
 		</main>
-		<section class="tipswrapper flex">
+		<section class="tipswrapper grid">
 			<div class="tips">
 				<h2 class="tips__header">Tips och tricks i köket!</h2>
 				<ul class="tips__list">
@@ -175,8 +177,10 @@
 				<h2 class="om__header">Om mig!</h2>
 				<p class="om__text">
 					Hej! Eric heter jag och jag är grundaren av denna webbplats. Denna
-					digitala kokbok skapades för ett slutprojekt inom kursen
-					Webbutveckling 1 på gymnasiet.
+					digitala kokbok skapades som ett slutprojekt inom kursen
+					Webbutveckling 1 på gymnasiet. Jag hoppas att min webbplats kan
+					inspirera dig till att laga mer mat själv, och att få upp dina ögon
+					för matlagning.
 				</p>
 			</div>
 		</section>
@@ -193,7 +197,16 @@
 				perMove: 1,
 				pagination: false,
 				gap: '1rem',
+				breakpoints: {
+					768: {
+						perPage: 2,
+					},
+					420: {
+						perPage: 1,
+					},
+				},
 			}).mount();
 		</script>
+		<script src="js/randomsite.js"></script>
 	</body>
 </html>

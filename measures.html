@@ -20,12 +20,12 @@
 	</head>
 	<body>
 		<header class="header flex bg-accent-dark">
-			<h1 class="header__title">
+			<h1 class="header__title text-center">
 				<a href="index.html" class="header__link ff-serif text-accent-light"
 					>Kokboken för studenter</a
 				>
 			</h1>
-			<h3 class="header__slogan ff-serif text-white">
+			<h3 class="header__slogan ff-serif text-white text-center">
 				Recept för dig som är nybliven student
 			</h3>
 		</header>
@@ -38,7 +38,9 @@
 					<a class="nav__listlink text-dark" href="index.html#recept">Recept</a>
 				</li>
 				<li class="nav__listitem">
-					<a class="nav__listlink text-dark" href="#">Beslutsångest?</a>
+					<a class="nav__listlink text-dark" id="random" href="#"
+						>Beslutsångest?</a
+					>
 				</li>
 				<li class="nav__listitem">
 					<a class="nav__listlink text-dark" href="index.html#ommig">Om mig</a>
@@ -146,39 +148,41 @@
 				</table>
 			</div>
 			<div class="dec border--dark">
-				<h2 class="measures__partheader">1 deciliter i gram</h2>
-				<table class="dec__table">
-					<tr>
-						<th>Mjöl</th>
-						<th>Socker</th>
-						<th>Matfett</th>
-					</tr>
-					<tr>
-						<td>Bovetemjöl = 60 g</td>
-						<td>Sirap = 140 g</td>
-						<td>Fast smör = 95 g</td>
-					</tr>
-					<tr>
-						<td>Grahamsmjöl = 60 g</td>
-						<td>Honung = 140 g</td>
-						<td>Kokosfett = 95 g</td>
-					</tr>
-					<tr>
-						<td>Vetemjöl = 60 g</td>
-						<td>Strösocker = 90 g</td>
-						<td>Smält smör = 90 g</td>
-					</tr>
-					<tr>
-						<td>Rågmjöl = 55 g</td>
-						<td>Farinsocker = 75 g</td>
-						<td>Olja = 90 g</td>
-					</tr>
-					<tr>
-						<td>Rågsikt = 55 g</td>
-						<td>Florsocker = 60 g</td>
-						<td>Ister = 85 g</td>
-					</tr>
-				</table>
+				<div class="inner">
+					<h2 class="measures__partheader">1 deciliter i gram</h2>
+					<table class="dec__table">
+						<tr>
+							<th>Mjöl</th>
+							<th>Socker</th>
+							<th>Matfett</th>
+						</tr>
+						<tr>
+							<td>Bovetemjöl = 60 g</td>
+							<td>Sirap = 140 g</td>
+							<td>Fast smör = 95 g</td>
+						</tr>
+						<tr>
+							<td>Grahamsmjöl = 60 g</td>
+							<td>Honung = 140 g</td>
+							<td>Kokosfett = 95 g</td>
+						</tr>
+						<tr>
+							<td>Vetemjöl = 60 g</td>
+							<td>Strösocker = 90 g</td>
+							<td>Smält smör = 90 g</td>
+						</tr>
+						<tr>
+							<td>Rågmjöl = 55 g</td>
+							<td>Farinsocker = 75 g</td>
+							<td>Olja = 90 g</td>
+						</tr>
+						<tr>
+							<td>Rågsikt = 55 g</td>
+							<td>Florsocker = 60 g</td>
+							<td>Ister = 85 g</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 			<div class="sal border--light">
 				<h2 class="measures__partheader">Saltmängd vid kokning</h2>
@@ -189,30 +193,33 @@
 				</p>
 			</div>
 			<div class="ktt border--light">
-				<h2 class="measures__partheader">Innertemperatur</h2>
-				<table class="ktt__table">
-					<tr>
-						<th>Blodigt/Rare<br />52-55&deg;C</th>
-						<th>Medium Välstekt/Medium<br />63-70&deg;C</th>
-					</tr>
-					<tr>
-						<td>Nöt, kalv och lamm</td>
-						<td>Nöt, kalv och lamm</td>
-					</tr>
-					<tr>
-						<th>Medium/Medium Rare<br />55-63&deg;C</th>
-						<th>Välstekt/Well done<br />70-75&deg;C</th>
-					</tr>
-					<tr>
-						<td>Nöt, kalv och lamm</td>
-						<td>Nöt, kalv, lamm, gris och kyckling</td>
-					</tr>
-				</table>
+				<div class="inner">
+					<h2 class="measures__partheader">Innertemperatur</h2>
+					<table class="ktt__table">
+						<tr>
+							<th>Blodigt/Rare<br />52-55&deg;C</th>
+							<th>Medium Välstekt/Medium<br />63-70&deg;C</th>
+						</tr>
+						<tr>
+							<td>Nöt, kalv och lamm</td>
+							<td>Nöt, kalv och lamm</td>
+						</tr>
+						<tr>
+							<th>Medium/Medium Rare<br />55-63&deg;C</th>
+							<th>Välstekt/Well done<br />70-75&deg;C</th>
+						</tr>
+						<tr>
+							<td>Nöt, kalv och lamm</td>
+							<td>Nöt, kalv, lamm, gris och kyckling</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</main>
 		<footer class="footer flex">
 			<p class="copyright">&copy; Eric Bjurvald, 2022</p>
 			<p>Skapat som ett skolprojekt vt-2022</p>
 		</footer>
+		<script src="js/randomsite.js"></script>
 	</body>
 </html>

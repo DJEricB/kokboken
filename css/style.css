@@ -280,3 +280,8 @@ select {
 .footer {
 	margin-top: 2rem;
 }
+@media screen and (max-width: 420px) {
+	.nav__list {
+		flex-direction: column;
+	}
+}

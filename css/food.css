@@ -8,7 +8,7 @@
 		'ing ing ing ing fim fim fim fim'
 		'how how how how tip tip tip tip'
 		'how how how how tip tip tip tip';
-	margin-inline: 2rem;
+	margin-inline: 12rem;
 }
 .foodinfo__wrapper {
 	grid-area: fiw;
@@ -40,4 +40,46 @@
 .obs {
 	color: red;
 	font-weight: bold;
+}
+.servings__container {
+	font-size: 1.25rem;
+	padding-left: 20px;
+}
+small {
+	margin-left: 20px;
+}
+.button {
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+.tips__list {
+	margin-right: 1rem;
+}
+.howto__list {
+	margin-right: 1rem;
+}
+.button--minus {
+	margin-right: 5.2px;
+}
+
+@media screen and (max-width: 900px) {
+	.content__wrapper {
+		grid-template-areas:
+			'fiw fiw fiw fiw fiw fiw fiw fiw'
+			'fim fim fim fim fim fim fim fim'
+			'ing ing ing ing ing ing ing ing'
+			'how how how how how how how how'
+			'tip tip tip tip tip tip tip tip';
+	}
+}
+@media screen and (max-width: 900px) {
+	.content__wrapper {
+		margin-inline: 2rem;
+		grid-template-areas:
+			'fiw fiw fiw fiw fiw fiw fiw fiw'
+			'fim fim fim fim fim fim fim fim'
+			'ing ing ing ing ing ing ing ing'
+			'how how how how how how how how'
+			'tip tip tip tip tip tip tip tip';
+	}
 }

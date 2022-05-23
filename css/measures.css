@@ -14,6 +14,7 @@
 }
 .measures__header {
 	grid-area: meh;
+	margin-top: 1rem;
 }
 .gsm {
 	grid-area: gsm;
@@ -37,15 +38,16 @@
 }
 .tmp__table {
 	width: 60%;
-	margin: 0 auto;
+	margin: 0 auto 1rem auto;
 }
 
 .dec {
 	grid-area: dec;
 	text-align: center;
+	overflow-y: auto;
 }
 .dec__table {
-	margin: 0 auto;
+	margin: 0 auto 1rem auto;
 }
 .sal {
 	grid-area: sal;
@@ -54,7 +56,44 @@
 .ktt {
 	grid-area: ktt;
 	text-align: center;
+	overflow-y: auto;
 }
 .ktt__table {
-	margin: 0 auto;
+	margin: 0 auto 1rem auto;
+}
+.inner {
+	min-width: 500px;
+}
+.measures__partheader {
+	margin-top: 1rem;
+}
+p {
+	margin-bottom: 1rem;
+}
+@media screen and (max-width: 900px) {
+	.measures {
+		grid-template-areas:
+			'meh meh meh meh meh meh'
+			'gsm gsm gsm svm svm svm'
+			'gsm gsm gsm brm brm brm'
+			'amm amm amm ktt ktt ktt'
+			'sal sal sal tmp tmp tmp'
+			'sal sal sal tmp tmp tmp'
+			'dec dec dec dec dec dec';
+	}
+}
+@media screen and (max-width: 768px) {
+	.measures {
+		margin-inline: 1rem;
+		grid-template-areas:
+			'meh meh meh meh meh meh'
+			'gsm gsm gsm gsm gsm gsm'
+			'svm svm svm svm svm svm'
+			'amm amm amm amm amm amm'
+			'brm brm brm brm brm brm'
+			'ktt ktt ktt ktt ktt ktt'
+			'sal sal sal sal sal sal'
+			'dec dec dec dec dec dec'
+			'tmp tmp tmp tmp tmp tmp' /* FIXME: */;
+	}
 }

@@ -21,7 +21,14 @@
 .tipswrapper {
 	margin-inline: 2rem;
 	margin-top: 2rem;
+	grid-template-columns: 1fr 1fr;
 }
 .tipswrapper > div {
 	box-shadow: 0 0 10px 5px hsl(var(--clr-accent-dark) / 0.5);
+}
+.tips {
+	grid-column: 1 / 2;
+}
+.ommig {
+	grid-column: 2 / 3;
 }
