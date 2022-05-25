@@ -15,20 +15,31 @@
 	text-align: center;
 }
 .om__text {
-	margin: 1rem 1rem 0 1rem;
+	margin: 1rem 1rem 1rem 1rem;
 	text-align: center;
 }
 .tipswrapper {
 	margin-inline: 2rem;
 	margin-top: 2rem;
 	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 't o';
 }
 .tipswrapper > div {
 	box-shadow: 0 0 10px 5px hsl(var(--clr-accent-dark) / 0.5);
 }
 .tips {
 	grid-column: 1 / 2;
+	grid-area: t;
 }
 .ommig {
 	grid-column: 2 / 3;
+	grid-area: o;
+}
+@media screen and (max-width: 768px) {
+	.tipswrapper {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			't'
+			'o';
+	}
 }
